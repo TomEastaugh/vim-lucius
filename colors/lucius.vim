@@ -633,9 +633,9 @@ hi DiffDelete   guifg=fg
 
 if s:style == "light"
     hi DiffAdd                      guibg=#afd7af
-    hi DiffChange                   guibg=#d7d7af
+    hi DiffChange                   guibg=#afafd7
     hi DiffDelete                   guibg=#d7afaf
-    hi DiffText                     guibg=#d7d7af
+    hi DiffText                     guibg=#afafd7
     if s:contrast == "low"
         hi DiffText     guifg=#ff8700
     else
@@ -643,13 +643,13 @@ if s:style == "light"
     endif
 else
     hi DiffAdd                      guibg=#5f875f
-    hi DiffChange                   guibg=#87875f
+    hi DiffChange                   guibg=#5f5f87
     hi DiffDelete                   guibg=#875f5f
-    hi DiffText                     guibg=#87875f
+    hi DiffText                     guibg=#5f5f87
     if s:contrast == "low"
-        hi DiffText     guifg=#d7d75f
+        hi DiffText     guifg=#5f5fd7
     else
-        hi DiffText     guifg=#ffff87
+        hi DiffText     guifg=#8787ff
     endif
 endif
 
