@@ -627,30 +627,16 @@ endif
 " Diff:
 " ----------------------------------------------------------------------------
 
-hi DiffAdd      guifg=fg
-hi DiffChange   guifg=fg
-hi DiffDelete   guifg=fg
-
 if s:style == "light"
     hi DiffAdd                      guibg=#afd7af
     hi DiffChange                   guibg=#afafd7
     hi DiffDelete                   guibg=#d7afaf
     hi DiffText                     guibg=#afafd7
-    if s:contrast == "low"
-        hi DiffText     guifg=#ff8700
-    else
-        hi DiffText     guifg=#d75f00
-    endif
 else
-    hi DiffAdd                      guibg=#5f875f
-    hi DiffChange                   guibg=#5f5f87
-    hi DiffDelete                   guibg=#875f5f
-    hi DiffText                     guibg=#5f5f87
-    if s:contrast == "low"
-        hi DiffText     guifg=#5f5fd7
-    else
-        hi DiffText     guifg=#8787ff
-    endif
+    hi DiffAdd                      guibg=#008700
+    hi DiffChange                   guibg=#008787
+    hi DiffDelete                   guibg=#870000
+    hi DiffText                     guibg=#005f5f
 endif
 
 
@@ -677,6 +663,7 @@ endif
 
 hi Ignore       guifg=bg
 hi Underlined   guifg=fg
+hi ColourColumn guibg=#d7d7af
 
 
 " ============================================================================
