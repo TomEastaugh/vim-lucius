@@ -663,7 +663,7 @@ endif
 
 hi Ignore       guifg=bg
 hi Underlined   guifg=fg
-hi ColourColumn guibg=#d7d7af
+hi ColorColumn  guibg=#87875f
 
 
 " ============================================================================
